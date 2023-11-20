@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calendario con FullCalendar</title>
+	<link rel="stylesheet" href="./css/inicio.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.js"></script>
+
+</head>
+<body>
+
+	<nav>
+
+        <div class="nav-logo">
+            <a href="#">
+                <img src="./img/logo.png">
+            </a>
+        </div>
+        
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Catalogo</a></li>
+            <li id="link2" class="link"><a href="#">Contacto</a></li>
+            <li id="link3" class="link"><a href="#">Nosotros</a></li>
+        </ul>
+        
+        <button class="btn">Pide aqui!</button>
+        
+        </nav>
+        
+  <div class="general">      
+<div id="uno">
+	<div id="calendario">
+		<script>
+			$(document).ready(function () {
+				$('#calendario').fullCalendar({
+					header: {
+						left: 'prev,next today',
+						center: 'title',
+						right: 'month,agendaWeek,agendaDay'
+					},
+					events: [
+
+				]     
+				});
+			});
+		</script>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+</div>
+
+<div class="supp">
+
+	<div class="esp">
+			<p>Soporte usuarios</p>
+	<div class="espacios"> </div>
+	<p>Solicitud de permiso de salida</p>
+	<div class="espacios"> </div>
+	<p>Solicitud de vacaciones</p>
+	<div class="espacios"> </div>
+	<p>Solicitud de servicios administrativos</p>
+	<div class="espacios"> </div>
+	<p>Encuestas de satifaccion</p>
+	<div class="espacios"> </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

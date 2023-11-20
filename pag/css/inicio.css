@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+       
+}
+img{
+  width: 100%;
+  display: flex;
+}
+
+a{
+  text-decoration: none; 
+}
+
+nav{
+  width: 100%;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: rgb(0, 0, 111);
+}
+
+.nav-logo{
+  max-width: 100px;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link a{
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+  width: 70%;
+}
+
+.btn{
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #f53aeb;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: #1e40af;
+}
+
+.features .card span{
+  display: inline-block;
+  background-color: #f53aeb;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.general{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+#uno{
+ background-image: url(../img/FONDO2.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#calendario {
+  max-width: 800px;
+  margin: 20px auto;
+  color: #ffffff;
+  
+}
+.supp{
+  background-image: url(img/FONDO1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+
+}
+
+.espacios{
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+}
